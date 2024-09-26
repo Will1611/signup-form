@@ -24,7 +24,8 @@ body {
   height: 100vh;
   background-color: var(--black);
   padding-top: 1.2rem;
-  overflow: none;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .container {
@@ -32,6 +33,38 @@ body {
   width: 78%;
   background-color: var(--white);
   margin: 0 auto;
+
+  display: flex;
+}
+
+.main-content {
+  height: 100%;
+  width: 100%;
+
+  position: relative;
+
+  padding: 20rem 6rem;
+}
+
+.form {
+  /* background-color: deeppink; */
+  position: absolute;
+
+  /* Overrides padding (left, 3rem) */
+  left: 0rem;
+  width: 100%;
+}
+
+.form-div {
+  background-color: #fff;
+  box-shadow: 0px 5px 5px #53535373;
+  padding: 2rem 6rem;
+}
+
+.p-large {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
 }
 
 .image {
@@ -41,6 +74,9 @@ body {
   background: url(img/img_main);
   background-size: cover;
   background-repeat: no-repeat;
+
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .heading {
@@ -70,5 +106,10 @@ h1 {
 
 footer {
   position: relative;
-  bottom: 0;
+  top: 86rem;
+  color: var(--white);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 1.4rem;
 }
